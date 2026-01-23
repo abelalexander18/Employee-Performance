@@ -1,0 +1,294 @@
+.review-container {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+}
+
+.page-header p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.stepper-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-form {
+  padding: 24px 0;
+}
+
+.step-form h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.subtitle {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.employee-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border-left: 4px solid #667eea;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.employee-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.employee-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.score-section {
+  margin-bottom: 32px;
+}
+
+.score-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.score-label mat-icon {
+  color: #667eea;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+mat-slider {
+  flex: 1;
+}
+
+.score-value {
+  min-width: 48px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #667eea;
+  text-align: center;
+}
+
+.overall-rating {
+  margin-top: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.overall-rating h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.overall-rating .rating-value {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.array-section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.section-header h3 mat-icon {
+  color: #667eea;
+  font-size: 22px;
+  height: 22px;
+  width: 22px;
+}
+
+.array-item {
+  margin-bottom: 12px;
+}
+
+.array-input {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.array-input mat-form-field {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.button-row button {
+  min-width: 120px;
+}
+
+/* Material Stepper Customization */
+::ng-deep .mat-stepper-horizontal {
+  background-color: transparent;
+}
+
+::ng-deep .mat-step-header {
+  padding: 24px 16px;
+}
+
+::ng-deep .mat-step-header .mat-step-icon {
+  background-color: #667eea;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #764ba2;
+}
+
+/* Material Slider Customization */
+::ng-deep .mat-mdc-slider {
+  padding: 0;
+}
+
+::ng-deep .mat-mdc-slider .mdc-slider__track--active_fill {
+  background-color: #667eea;
+}
+
+::ng-deep .mat-mdc-slider .mdc-slider__thumb-knob {
+  background-color: #667eea;
+  border-color: #667eea;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .review-container {
+    padding: 16px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .step-form {
+    padding: 16px 0;
+  }
+
+  .step-form h2 {
+    font-size: 20px;
+  }
+
+  .employee-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .score-value {
+    min-width: auto;
+  }
+
+  .overall-rating .rating-value {
+    font-size: 42px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .button-row button {
+    width: 100%;
+  }
+}
